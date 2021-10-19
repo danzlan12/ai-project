@@ -1,4 +1,4 @@
-# Project
+# Deskripsi
 Project ini merupakan sebuah web pendeteksi gambar, yang di bangun dengan menerapkan sistem Artificial Intelligence. Dimana sistem tersebut dibuat menggunakan bahasa pemrograman python. Adapun beberapa tahapan dalam membangun sistem tersebut mulai dari mencari dataset sebagai objek sampai menentukan algoritma yang sesuai yang akan diterapkan pada program.
 
 Untuk dataset itu sendiri berupa gambar dedaunan, kali ini kita menggunakan 2 label untuk dataset yakni daun jeruk nipis dan pepaya. Dibutuhkan 100 foto daun yang terdiri dari 50 foto daun jeruk nipis dan 50 foto daun pepaya. Adapun kriteria dalam pembuatan dataset yaitu :
