@@ -12,16 +12,15 @@ class_dict = {0: 'daun jeruk nipis', 1: 'daun pepaya'}
 
 def predict_label(img_path):
   
-    queryPath = imagePaths+'query_jeruk fix.jpg'
-    query = cv2.imread(queryPath)
+    query = cv2.imread(img_path)
     output = query.copy()
     query = cv2.resize(query, (32, 32))
     q = []
     q.append(query)
     q = np.array(q, dtype='float') / 255.0
-
     q_pred = model.predict(q)
-    print(q_pred)
+    predicted_bit = int(q_pred)
+    return class_dict[predicted_bit]
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
